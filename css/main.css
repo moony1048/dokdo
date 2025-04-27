@@ -25,17 +25,6 @@ a:hover {
     color: var(--main-color); /* #133984 */
 }
 
-figure {
-    width: 100%;
-    height: 100%;
-}
-
-figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .inner {
     width: 140rem;
     height: 100%;
@@ -660,6 +649,7 @@ figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
 }
 
 .notice-slider .swiper-slide strong {
@@ -974,6 +964,7 @@ figure img {
     gap: 4rem;
 }
 
+/* 단체예약 신청 부분 */
 @keyframes dot {
     100% {
         opacity: 1;
@@ -1026,6 +1017,7 @@ figure img {
     }
 }
 
+/* footer 서도, 동도 */
 @keyframes scale {
     0% {
         transform: scale(0);
@@ -1033,5 +1025,18 @@ figure img {
 
     100% {
         transform: scale(1);
+    }
+}
+
+/* footer typing */
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
     }
 }
