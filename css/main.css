@@ -371,8 +371,6 @@ figure img {
     /* border: 1px solid #000; */
 }
 
-/* 이름바꾸기 dock_in */
-
 .dokdo_information .inner {
     display: flex;
     gap: 13.5rem;
@@ -570,9 +568,42 @@ figure img {
 
     overflow: visible; /* 원 나오게 */
 
+    overflow: hidden;
+
     width: 60%;
     height: 52.1rem;
 }
+
+.circle {
+    display: inline-block;
+    position: absolute;
+    top: 2.8rem;
+    left: 73rem;
+    transform: translate(-50%, -50%);
+
+    width: 20rem;
+    height: 20rem;
+    border: 52px solid var(--main-color);
+
+    border-radius: 50%;
+
+    z-index: -1;
+}
+/* .notice-slider::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 2.8rem;
+    left: -1rem;
+    transform: translate(-50%, -50%);
+
+    width: 9.4rem;
+    height: 9.4rem;
+    border: 52px solid var(--main-color);
+    border-radius: 50%;
+
+    z-index: -1;
+} */
 
 .notice-slider .swiper-slide {
     /* width: 39.8rem;
@@ -631,22 +662,6 @@ figure img {
     height: 7.8rem;
 }
 
-.notice-slider::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 2.8rem;
-    left: -1rem;
-    transform: translate(-50%, -50%);
-
-    width: 9.4rem;
-    height: 9.4rem;
-    border: 52px solid var(--main-color);
-    border-radius: 50%;
-
-    z-index: -1;
-}
-
 /* banner_info */
 .banner_info {
     margin-top: 10.3rem;
@@ -660,7 +675,7 @@ figure img {
     box-shadow: 0 9px 25px 5px #00000036;
 
     position: relative;
-    z-index: 10; /* 푸터보다 위에 */
+    z-index: 10; /* footer보다 위에 */
 }
 
 .banner_info li {
