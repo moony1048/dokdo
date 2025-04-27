@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // notice
     const swiper = new Swiper(".notice-slider", {
-        loop: true, // 슬라이드 무한 반복
         autoplay: {
             delay: 5000, // 5초마다 자동 슬라이드
         },
