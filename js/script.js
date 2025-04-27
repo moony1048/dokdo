@@ -34,6 +34,41 @@ document.addEventListener("DOMContentLoaded", () => {
         swiper.autoplay.stop(); // 자동 슬라이드 정지
     });
 
+    // header
+    gsap.to("#header .logo-text img", {
+        duration: 0.5,
+        attr: { src: "./img/logo_black.svg" }, // 새 이미지 경로로 변경
+        scrollTrigger: {
+            trigger: "#header",
+            start: "top top",
+            end: "bottom top",
+            toggleActions: "play none none reverse",
+        },
+    });
+
+    gsap.to("#header", {
+        backgroundColor: "#fff", // 변경할 배경색
+        color: "#000", // 변경할 글자 색
+        scrollTrigger: {
+            trigger: "#header",
+            start: "top top",
+            end: "bottom top",
+            toggleActions: "play none none reverse",
+            // markers: true,
+        },
+    });
+
+    gsap.to("#header a, #header ul, #header li", {
+        color: "#000", // 글자색 변경
+        scrollTrigger: {
+            trigger: "#header",
+            start: "top top",
+            end: "bottom top",
+            toggleActions: "play none none reverse",
+            // markers: true,
+        },
+    });
+
     gsap.from(".dokdo_info", {
         opacity: 0,
         y: 50,
