@@ -22,7 +22,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: var(--main-color); /* #133984 */
+    /* color: var(--main-color); */
 }
 
 .inner {
@@ -593,8 +593,8 @@ a:hover {
 }
 
 .notice_btn .btn-stop img {
-    width: 1.2rem;
-    height: 1.3rem;
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
 .notice-slider {
@@ -680,6 +680,8 @@ a:hover {
 }
 
 .notice-slider .swiper-slide dl dd {
+    color: #555;
+    font-weight: 300;
     width: 29.7rem;
     height: 7.8rem;
 }
