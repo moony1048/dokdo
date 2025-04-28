@@ -856,35 +856,28 @@ a:hover {
 
 .foot-con-list {
     background: #393846;
+
     width: 100%;
-    height: auto;
-    font-size: 1.3rem;
-    font-weight: 300;
-    color: var(--text-color2);
-    margin-top: -2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
+    height: 21rem;
 
-.foot-con-list > div,
-.foot-con-list > a {
-    display: flex;
-    gap: 2rem;
-    margin-left: 25rem;
-}
-
-.foot-link-wrap {
-    margin-top: 2rem;
-    display: flex;
-    gap: 2rem;
-}
-
-/* 점 */
-.foot-link-wrap a {
     position: relative;
 }
 
+.foot-link-wrap {
+    display: flex;
+    margin-left: 25rem;
+    gap: 2rem;
+}
+
+.foot-link-wrap a {
+    position: relative;
+    margin-top: 3rem;
+    color: var(--text-color2);
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+/* 점 */
 .foot-link-wrap a:not(:first-child)::before {
     content: "";
     display: inline-block;
@@ -898,15 +891,16 @@ a:hover {
     transform: translateY(-50%);
 }
 
-.foot-con-bottom {
+.foot-con-list2 {
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    margin-left: 25rem;
 }
 
-.foot-con-bottom img {
-    width: 13rem;
-    height: 9rem;
+.foot-con-list2 p {
+    margin-top: 2rem;
+    color: var(--text-color2);
+    font-size: 1.3rem;
+    font-weight: 200;
 }
 
 .copyright {
@@ -914,6 +908,23 @@ a:hover {
     font-weight: 300;
     color: #999;
     margin-top: 2rem;
+
+    margin-left: 25rem;
+}
+
+.foot-con-bottom {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    position: absolute;
+    top: 326%;
+    left: 70%;
+}
+
+.foot-con-bottom img {
+    width: 13rem;
+    height: 9rem;
 }
 
 .road {
@@ -929,14 +940,14 @@ a:hover {
 .road a img {
     width: 2.7rem;
     height: 3.1rem;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
 }
 
 .road p {
     font-size: 1.7rem;
     font-weight: 300;
     color: var(--text-color2);
-    margin-top: 1.1rem;
+    margin-top: 1rem;
 }
 
 .road:hover {
@@ -955,13 +966,6 @@ a:hover {
     top: -15%;
     left: -15%;
     opacity: 0.8;
-}
-
-.foot-con-bottom2 {
-    display: flex;
-    align-items: center;
-    margin-left: 63rem;
-    gap: 4rem;
 }
 
 /* 단체예약 신청 부분 */
